@@ -6,3 +6,16 @@ markdown:
   engine: commonmark
   options:
     gfm: true
+collections_config:
+  contemporary:
+    path: contemporary
+    icon: category
+    disable_url: true
+  contemporary_commercial:
+    path: contemporary/commercial
+    icon: control_camera
+    disable_url: true
+  contemporary_default:
+    path: contemporary/default
+    icon: conveyor_belt
+    disable_url: true
