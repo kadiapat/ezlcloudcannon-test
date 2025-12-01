@@ -1,0 +1,140 @@
+---
+const { title, slug } = Astro.props;
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>{title}</title>
+
+  <!--SEO Meta Tags-->
+  <meta name="keywords" content="" />
+  <meta name="description" content="">
+  <meta name="author" content="EZLynx">
+
+  <!--Canonical-->
+  <link rel="canonical" href="https://www.insuranceagency/{slug}" />
+
+  <!--Favicon-->  
+  <link href="/img/favicon.ico" rel="shortcut icon" type="image/ico">
+
+  <!--Google Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@100;200;300;400;500;600;700;800;900&family=Shrikhand&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,600i,700,700i,800,800i&display=swap" rel="stylesheet">
+
+  <!--CSS-->
+  <link rel="stylesheet" href="/css/master.css">
+  <link rel="stylesheet" href="/css/media-queries.css">
+  <link rel="stylesheet" href="https://agencywebsites.ezlynx.com/fonts/font-awesome-5/css/all.css">
+
+  <!--Global Analytics-->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=TRACKINGID"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'TRACKINGID');
+  </script>
+</head>
+<body>
+<div class="width-mod">
+
+  <!-- HEADER -->
+  <header>
+    <div class="top-bar">
+      <div class="container">
+        <div class="col-md-12 top-content">
+          <ul class="social_design">
+            <li><a href="https://www.facebook.com/ezlynx" target="_blank" rel="nofollow"><i class="fab fa-facebook-f"></i><span class="visuallyhidden">Facebook</span></a></li>
+            <li><a href="https://twitter.com/ezlynx" target="_blank" rel="nofollow"><i class="fab fa-twitter"></i><span class="visuallyhidden">Twitter</span></a></li>
+            <li><a href="https://www.linkedin.com/company/ezlynx"  target="_blank" rel="nofollow"><i class="fab fa-linkedin-in"></i><span class="visuallyhidden">LinkedIn</span></a></li>
+            <li><a href="https://www.youtube.com/channel/UCCGYxn9jScwC8JOIzDFPhNw"  target="_blank" rel="nofollow"><i class="fab fa-youtube"></i><span class="visuallyhidden">YouTube</span></a></li>
+            <li><a href="#" target="_blank" rel="nofollow"><i class="fab fa-yelp"></i><span class="visuallyhidden">Yelp</span></a></li>
+          </ul>
+          <ul class="top_bar_phone">
+            <li class="phone-automate"><i class="fa fa-phone" aria-hidden="true"></i><span class="editable" id="top-phone">000-000-0000</span></li>
+            <li class="phone-automate"><i class="fa fa-comments" aria-hidden="true"></i><a href="sms:222-222-2222" class="sms-txt">222-222-2222</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container nav-row">
+      <div class="row nav-section">
+        <div class="col-md-4 logo-section">
+          <a href="index.html"><img src="/img/insurance-agency.png" class="agency-logo img-responsive editable" id="logo"></a>
+        </div>
+        <div class="col-md-7 offset-md-1 nav-menu">
+          <nav class="navbar navbar-expand-md navbar-dark navbar-custom">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarContent">
+              <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item active"><a class="nav-link" href="about-us.html">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="customer-service.html">Customer Service</a></li>
+                <li class="nav-item"><a class="nav-link" href="compare-quotes.html">Compare Quotes</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact-us.html">Contact Us</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <slot /> <!-- Page-specific content goes here -->
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer-section">
+    <div class="container">
+      <div class="row">
+        <nav class="navbar">
+          <div class="footer-nav">
+            <ul class="navbar-nav">
+              <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+              <li class="nav-item active"><a class="nav-link" href="about-us.html">About Us</a></li>
+              <li class="nav-item"><a class="nav-link" href="customer-service.html">Customer Service</a></li>
+              <li class="nav-item"><a class="nav-link" href="compare-quotes.html">Compare Quotes</a></li>
+              <li class="nav-item"><a class="nav-link" href="contact-us.html">Contact Us</a></li>
+            </ul>
+
+            <address>
+              <ul id="agency-address" class="editable">
+                <li><span class="foot-cont insur-agency">[Insurance Agency]</span></li>
+                <li class="cont-address"><a href="https://goo.gl/maps/d4iqEqUwsAT2" target="_blank"><span class="add-con">1234 Main Street, Townsville, TL 98765</span></a></li>
+                <li class="cont-phone"><span class="phone-automate foot-cont">000-000-0000</span></li>
+                <li class="cont-text"><span class="phone-automate foot-cont"><a href="sms:222-222-2222">222-222-2222</a></span></li>
+                <li class="cont-fax"><span class="fax-automate foot-cont">111-111-1111</span></li>
+                <li class="cont-email"><span class="foot-cont"><a href="mailto:info@insuranceagency.com">info@insuranceagency.com</a></span></li>
+              </ul>
+            </address>
+
+            <div class="site-info">
+              <ul>
+                <li><a href="index.html" class="active">[Insurance Agency]</a></li>
+                <li>| Website Development by <a href="https://www.ezlynx.com/" target="_blank"><span>EZLynx</span></a><sup>&reg;</sup></li>
+                <li>• Copyright &copy; <script>document.write(new Date().getFullYear());</script></li>
+                <li>• All Rights Reserved</li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<!-- JS Scripts -->
+<script src="https://agencywebsites.ezlynx.com/bootstrap4.6.2/js/jquery.slim.min.js"></script>
+<script src="https://agencywebsites.ezlynx.com/bootstrap4.6.2/js/bootstrap.bundle.min.js"></script>
+<script src="/js/custom.js"></script>
+</body>
+</html>
