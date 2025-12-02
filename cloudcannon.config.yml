@@ -1,12 +1,8 @@
 paths:
-  static: ''       # root of your repo where HTML files are located
-  uploads: uploads # folder for uploaded media
+  static: ''       # root folder of HTML files
+  uploads: uploads
   pages:
     '*.html':
       editable: true
 
 timezone: Asia/Calcutta
-
-markdown:
-  engine: commonmark
-  options: {}
