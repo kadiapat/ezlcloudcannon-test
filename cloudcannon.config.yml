@@ -5,3 +5,7 @@ timezone: Asia/Calcutta
 markdown:
   engine: commonmark
   options: {}
+collections_config:
+  commercial:
+    path: commercial
+    icon: camera
