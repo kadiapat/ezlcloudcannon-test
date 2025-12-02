@@ -4,3 +4,5 @@ paths:
   pages:
     '*.html':
       editable: true
+
+timezone: Asia/Calcutta
