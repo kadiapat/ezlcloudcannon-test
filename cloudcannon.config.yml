@@ -1,8 +1,15 @@
 paths:
-  static: ''       # root folder of HTML files
+  static: ''
   uploads: uploads
   pages:
     '*.html':
       editable: true
-
+collections_config:
+  commercial:
+    path: commercial
+    icon: camera
+    disable_url: false
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
 timezone: Asia/Calcutta
