@@ -1,6 +1,9 @@
 paths:
   static: ''
   uploads: uploads
+  pages:
+  '*.html':
+    editable: true
 timezone: Asia/Calcutta
 markdown:
   engine: commonmark
