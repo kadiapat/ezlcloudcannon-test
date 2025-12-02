@@ -1,14 +1,12 @@
 paths:
-  static: ''
-  uploads: uploads
+  static: ''       # root of your repo where HTML files are located
+  uploads: uploads # folder for uploaded media
   pages:
     '*.html':
       editable: true
+
 timezone: Asia/Calcutta
+
 markdown:
   engine: commonmark
   options: {}
-collections_config:
-  commercial:
-    path: commercial
-    icon: camera
