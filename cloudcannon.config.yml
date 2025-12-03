@@ -1,0 +1,11 @@
+# Tells CloudCannon you are not using a traditional SSG
+static_site_generator: none 
+
+# Overrides the default build command (which would try to run an SSG build)
+# to simply do nothing, as your files are already built.
+build:
+  command: echo "Serving static files directly"
+  
+# Specifies the folder where your final HTML files and assets are located.
+# Use '/' if they are in the root, or '/public' if they are in a subfolder.
+output_path: /
