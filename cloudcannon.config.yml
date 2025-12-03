@@ -2,7 +2,7 @@ collections_config:
   commercial:
     path: commercial
     icon: camera
-    url: /[slug]/
+    url: /[slug]
     disable_url: false
     _enabled_editors:
       - visual
