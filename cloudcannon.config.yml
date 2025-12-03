@@ -1,11 +1,13 @@
-# Tells CloudCannon you are not using a traditional SSG
-static_site_generator: none 
-
-# Overrides the default build command (which would try to run an SSG build)
-# to simply do nothing, as your files are already built.
+collections_config:
+  commercial:
+    path: commercial
+    icon: camera
+    disable_url: false
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+timezone: Etc/UTC
+static_site_generator: none
 build:
   command: echo "Serving static files directly"
-  
-# Specifies the folder where your final HTML files and assets are located.
-# Use '/' if they are in the root, or '/public' if they are in a subfolder.
 output_path: /
